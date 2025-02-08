@@ -18,6 +18,18 @@ const theme = createTheme({
       "#d47b09",
       "#bd6c01",
       "#a55c00"
+    ],
+    'ald-green': [
+      "#eefaee",
+      "#dff0df",
+      "#bedfbd",
+      "#9acd99",
+      "#7cbe7a",
+      "#69b466",
+      "#5eb05b",
+      "#4d9a4b",
+      "#428941",
+      "#357734"
     ]
   }
 });
