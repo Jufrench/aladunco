@@ -1,8 +1,8 @@
-import { Box, Button, Card, Center, Group, Stack, Text, Title, useMantineTheme, VisuallyHidden } from '@mantine/core';
+import { Box, Button, Card, Center, Stack, Text, Title, useMantineTheme, VisuallyHidden } from '@mantine/core';
 import './App.css'
 import MobileHeader from './components/MobileHeader';
 // import '@mantine/core/styles.css';
-import MobileHero from './components/MobileHero';
+// import MobileHero from './components/MobileHero';
 import { IconExternalLink } from '@tabler/icons-react';
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+      <VisuallyHidden>Aladun Dance Company</VisuallyHidden>
       <Box component="header" pb="sm">
         <MobileHeader />
       </Box>
