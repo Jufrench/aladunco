@@ -1,4 +1,4 @@
-import { Box, Button, Group, useMantineTheme, VisuallyHidden } from '@mantine/core';
+import { Box, Button, Card, Center, Group, Stack, Text, Title, useMantineTheme, VisuallyHidden } from '@mantine/core';
 import './App.css'
 import MobileHeader from './components/MobileHeader';
 // import '@mantine/core/styles.css';
@@ -10,27 +10,55 @@ function App() {
 
   return (
     <>
-      <VisuallyHidden>Aladun Dance Company</VisuallyHidden>
       <Box component="header" pb="sm">
         <MobileHeader />
       </Box>
-      <Box component="main" pb="sm">
-        <MobileHero />
-      </Box>
-      <Group bg="white" p="xs">
-        {/* <Anchor component="button" c="black" href="https://squareup.com/gift/94WAGV6W0MAZ3/order">Class Cards</Anchor> */}
-        <Button
-          bg={theme.colors['ald-green'][7]}
-          component="a"
-          c="white"
-          href="https://squareup.com/gift/94WAGV6W0MAZ3/order"
-          rightSection={<IconExternalLink />}
-        >
-          Class Cards
-        </Button>
-      </Group>
+      <Card withBorder>
+        <Stack>
+          <Card.Section h={160} bg={theme.colors['ald-orange'][7]}>
+            <Center style={{ height: "100%" }}>
+              <Title c={"white"} order={1}>Aládùn</Title>
+            </Center>
+          </Card.Section>
+          <Text c="white">Click below to join the community!</Text>
+          <Button
+            size="md"
+            bg={theme.colors['ald-green'][7]}
+            component="a"
+            c="white"
+            href="https://squareup.com/gift/94WAGV6W0MAZ3/order"
+            rightSection={<IconExternalLink />}
+          >
+            Class Cards
+          </Button>
+        </Stack>
+      </Card>
     </>
-  )
+  );
+
+  // return (
+  //   <>
+  //     <VisuallyHidden>Aladun Dance Company</VisuallyHidden>
+  //     <Box component="header" pb="sm">
+  //       <MobileHeader />
+  //     </Box>
+  //     <Box component="main" pb="sm">
+  //       <MobileHero />
+  //     </Box>
+  //     <Group bg="white" p="xs">
+  //       {/* <Anchor component="button" c="black" href="https://squareup.com/gift/94WAGV6W0MAZ3/order">Class Cards</Anchor> */}
+  //       <Button
+  //         bg={theme.colors['ald-green'][7]}
+  //         component="a"
+  //         c="white"
+  //         href="https://squareup.com/gift/94WAGV6W0MAZ3/order"
+  //         rightSection={<IconExternalLink />}
+  //       >
+  //         Class Cards
+  //       </Button>
+  //     </Group>
+  //   </>
+  // )
 }
 
 export default App
